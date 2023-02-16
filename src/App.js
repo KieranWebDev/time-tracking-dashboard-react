@@ -8,6 +8,12 @@ function App() {
   return (
     <div className="dashboard-container">
       <NameCard />
+      <ActivityCard />
+      <ActivityCard />
+      <ActivityCard />
+      <ActivityCard />
+      <ActivityCard />
+      <ActivityCard />
     </div>
   );
 }
