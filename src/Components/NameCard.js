@@ -3,27 +3,25 @@ import userPic from '../images/image-jeremy.png';
 
 function NameCard() {
   return (
-    <header class="name-and-options-card-container">
-      <div class="name-card">
+    <header className="name-and-options-card-container">
+      <div className="name-card">
         <img src={userPic} alt="user" />
-        <div class="name-card-text">
+        <div className="name-card-text">
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
         </div>
       </div>
 
-      <div class="time-options-container">
+      <div className="time-options-container">
         <ul>
           <li>
-            <button autofocus class="time-button daily">
-              Daily
-            </button>
+            <button className="time-button daily">Daily</button>
           </li>
           <li>
-            <button class="time-button weekly">Weekly</button>
+            <button className="time-button weekly">Weekly</button>
           </li>
           <li>
-            <button class="time-button monthly">Monthly</button>
+            <button className="time-button monthly">Monthly</button>
           </li>
         </ul>
       </div>
