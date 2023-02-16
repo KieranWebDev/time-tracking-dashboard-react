@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* RESET */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* TYPOGRAPHY */
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: var(--very-dark-blue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* LAYOUT */
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  padding: 1.5rem;
+}
+img {
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* COLORS */
+:root {
+  --blue: #5847eb;
+  --light-red: #ff8c66;
+  --soft-blue: #b3c1ff;
+  --light-red-study: #ff5c7c;
+  --lime-green: #a8e063;
+  --violet: #c792ea;
+  --soft-orange: #ff9e73;
+  --very-dark-blue: #0d0c22;
+  --dark-blue: #1e213a;
+  --desaturated-blue: #2a3052;
+  --pale-blue: #e7e7eb;
 }
