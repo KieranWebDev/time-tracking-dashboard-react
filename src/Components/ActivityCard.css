@@ -66,6 +66,7 @@
 .dashboard-item-text h3 {
   font-size: 2rem;
   font-weight: 300;
+  transition: all 0.3s ease;
 }
 .dashboard-item-text p {
   font-size: 15px;
@@ -75,6 +76,7 @@
 @media (min-width: 950px) {
   .dashboard-item {
     max-height: none;
+    grid-template-rows: repeat(10, 1fr);
   }
   /*component layout  */
   .name-card {

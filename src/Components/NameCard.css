@@ -68,6 +68,9 @@
 
   pointer-events: auto;
 }
+.time-options-container .time-button:focus {
+  color: white;
+}
 
 @media (min-width: 550px) {
   .name-and-options-card-container {
