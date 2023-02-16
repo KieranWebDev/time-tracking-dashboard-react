@@ -71,3 +71,50 @@
   font-size: 15px;
   color: var(--soft-blue);
 }
+
+@media (min-width: 950px) {
+  .dashboard-item {
+    max-height: none;
+  }
+  /*component layout  */
+  .name-card {
+    grid-row: 1/8;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
+
+  .time-options-container {
+    grid-row: 6/11;
+    justify-content: flex-start;
+  }
+
+  .time-options-container ul {
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 0; */
+  }
+
+  .background-pic {
+    grid-row: 1/5;
+    grid-column: 1/2;
+  }
+  .dashboard-item-text {
+    grid-row: 3/11;
+    grid-column: 1/2;
+    gap: 1.5rem;
+  }
+  .dashboard-item-text .flex-bottom {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* margin-top: 1.5rem; */
+  }
+
+  /* TYPEOGRAPHY */
+
+  .dashboard-item-text h3 {
+    font-size: 3.5rem;
+  }
+}
