@@ -1,0 +1,70 @@
+.name-and-options-card-container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  max-height: 200px;
+}
+
+.name-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--blue);
+  border-radius: 15px;
+  gap: 1rem;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  z-index: 1;
+  /* pointer-events: none; */
+}
+.name-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid white;
+  /* margin-right: 1rem; */
+}
+.name-card p {
+  font-size: 15px;
+  color: var(--soft-blue);
+}
+.name-card h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+/* time options-card */
+
+.time-options-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  padding: 1.8rem 2rem;
+
+  grid-row: 3/6;
+  grid-column: 1/2;
+  pointer-events: none;
+}
+.time-options-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.time-options-container li {
+  list-style: none;
+}
+
+.time-options-container .time-button {
+  background-color: transparent;
+  border: none;
+  color: #7078c9;
+
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+
+  pointer-events: auto;
+}
