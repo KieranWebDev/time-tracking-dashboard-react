@@ -21,7 +21,7 @@ function NameCard(props) {
               onClick={() => props.changeDisplayedData('daily')}
               className="time-button daily"
               style={
-                props.isActive === 'daily'
+                props.current === 'daily'
                   ? { color: 'white' }
                   : { color: '#7078c9' }
               }
@@ -34,7 +34,7 @@ function NameCard(props) {
               onClick={() => props.changeDisplayedData('weekly')}
               className="time-button weekly"
               style={
-                props.isActive === 'weekly'
+                props.current === 'weekly'
                   ? { color: 'white' }
                   : { color: '#7078c9' }
               }
@@ -48,7 +48,7 @@ function NameCard(props) {
               className="time-button 
             monthly"
               style={
-                props.isActive === 'monthly'
+                props.current === 'monthly'
                   ? { color: 'white' }
                   : { color: '#7078c9' }
               }
