@@ -68,7 +68,8 @@
 
   pointer-events: auto;
 }
-.time-options-container .time-button:focus {
+
+.time-options-container .time-button .active {
   color: white;
 }
 

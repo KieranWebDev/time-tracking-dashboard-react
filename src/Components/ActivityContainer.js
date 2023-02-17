@@ -1,3 +1,5 @@
+import React from 'react';
+
 import ActivityCard from './ActivityCard';
 
 import playIcon from '../images/icon-play.svg';

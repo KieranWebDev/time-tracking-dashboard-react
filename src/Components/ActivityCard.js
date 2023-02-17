@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './ActivityCard.css';
 
 import ellipsisIcon from '../images/icon-ellipsis.svg';

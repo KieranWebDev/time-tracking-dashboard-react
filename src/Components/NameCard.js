@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './NameCard.css';
 import userPic from '../images/image-jeremy.png';
 
@@ -16,9 +18,13 @@ function NameCard(props) {
         <ul>
           <li>
             <button
-              autofocus
               onClick={() => props.changeDisplayedData('daily')}
               className="time-button daily"
+              style={
+                props.isActive === 'daily'
+                  ? { color: 'white' }
+                  : { color: '#7078c9' }
+              }
             >
               Daily
             </button>
@@ -27,6 +33,11 @@ function NameCard(props) {
             <button
               onClick={() => props.changeDisplayedData('weekly')}
               className="time-button weekly"
+              style={
+                props.isActive === 'weekly'
+                  ? { color: 'white' }
+                  : { color: '#7078c9' }
+              }
             >
               Weekly
             </button>
@@ -36,6 +47,11 @@ function NameCard(props) {
               onClick={() => props.changeDisplayedData('monthly')}
               className="time-button 
             monthly"
+              style={
+                props.isActive === 'monthly'
+                  ? { color: 'white' }
+                  : { color: '#7078c9' }
+              }
             >
               Monthly
             </button>
