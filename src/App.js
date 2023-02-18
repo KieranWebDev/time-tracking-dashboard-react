@@ -10,8 +10,8 @@ import data from './data/data.json';
 import './App.css';
 
 function App() {
-  const [current, setCurrent] = useState('daily');
-  const [previous, setPrevious] = useState('daily');
+  const [current, setCurrent] = useState('weekly');
+  const [previous, setPrevious] = useState('weekly');
 
   function changeDisplayedData(timeFrame) {
     setCurrent(timeFrame);
