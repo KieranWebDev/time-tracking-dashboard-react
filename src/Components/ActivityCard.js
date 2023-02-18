@@ -6,10 +6,11 @@ import ellipsisIcon from '../images/icon-ellipsis.svg';
 
 function ActivityCard(props) {
   return (
-    <section className="dashboard-item play-section">
+    <section className="dashboard-item">
       <div className="background-pic">
-        <img className="play-icon" src={props.icon} alt="play-icon" />
+        <img src={props.icon} alt={props.alt} />
       </div>
+
       <div className="dashboard-item-text">
         <div className="flex-top">
           <h2 className="activity-title">{props.title}</h2>

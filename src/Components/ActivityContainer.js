@@ -18,6 +18,15 @@ const icons = [
   selfCareIcon,
 ];
 
+const iconAltText = [
+  'work-icon',
+  'play-icon',
+  'study-icon',
+  'excercise-icon',
+  'social-icon',
+  'self-care-icon',
+];
+
 export default function ActivityContainer(props) {
   return (
     <>
@@ -28,6 +37,7 @@ export default function ActivityContainer(props) {
           timeFrameCurrent={activity.timeframes[props.current].current}
           timeFramePrevious={activity.timeframes[props.previous].previous}
           icon={icons[index]}
+          alt={iconAltText[index]}
         />
       ))}
     </>

@@ -19,7 +19,7 @@ function NameCard(props) {
           <li>
             <button
               onClick={() => props.changeDisplayedData('daily')}
-              className="time-button daily"
+              className="time-button"
               style={
                 props.current === 'daily'
                   ? { color: 'white' }
@@ -32,7 +32,7 @@ function NameCard(props) {
           <li>
             <button
               onClick={() => props.changeDisplayedData('weekly')}
-              className="time-button weekly"
+              className="time-button"
               style={
                 props.current === 'weekly'
                   ? { color: 'white' }
@@ -45,8 +45,7 @@ function NameCard(props) {
           <li>
             <button
               onClick={() => props.changeDisplayedData('monthly')}
-              className="time-button 
-            monthly"
+              className="time-button"
               style={
                 props.current === 'monthly'
                   ? { color: 'white' }
