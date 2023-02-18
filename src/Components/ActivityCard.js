@@ -17,7 +17,7 @@ function ActivityCard(props) {
           <img src={ellipsisIcon} alt="ellipsis" />
         </div>
         <div className="flex-bottom">
-          <h3 className="time-amount">{props.timeFrameCurrent}</h3>
+          <h3 className="time-amount">{props.timeFrameCurrent}hrs</h3>
           <p className="previous-time-amount">
             Last Week - {props.timeFramePrevious}
           </p>
